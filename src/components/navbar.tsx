@@ -13,6 +13,7 @@ import {
   XMarkIcon,
   Bars3Icon,
 } from "@heroicons/react/24/solid";
+import { DaisyThemeSwitcher } from "./daisy-theme-switcher";
 
 const NAV_MENU = [
   {
@@ -80,7 +81,8 @@ export function Navbar() {
             </NavItem>
           ))}
         </ul>
-        <div className="hidden items-center gap-2 lg:flex">
+        <div className="hidden items-center gap-3 lg:flex">
+          <DaisyThemeSwitcher />
           <Button variant="text">Log in</Button>
           <a href="https://www.material-tailwind.com/blocks" target="_blank">
             <Button color="gray">blocks</Button>
@@ -109,7 +111,8 @@ export function Navbar() {
               </NavItem>
             ))}
           </ul>
-          <div className="mt-6 mb-4 flex items-center gap-2">
+          <div className="mt-6 mb-4 flex items-center gap-3">
+            <DaisyThemeSwitcher />
             <Button variant="text">Log in</Button>
             <a href="https://www.material-tailwind.com/blocks" target="_blank">
               <Button color="gray">blocks</Button>
